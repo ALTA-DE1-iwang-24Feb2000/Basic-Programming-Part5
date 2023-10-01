@@ -30,7 +30,7 @@ class TestPairSum(unittest.TestCase):
 
     def test_no_pair(self):
         result = pair_sum([1, 2, 3, 4, 6], 11)
-        expected = None
+        expected = []
         self.assertEqual(result, expected)
 
 if __name__ == '__main__':

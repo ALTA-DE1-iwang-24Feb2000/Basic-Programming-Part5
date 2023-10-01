@@ -1,4 +1,12 @@
 def pow(x, n):
+    if n < 0:
+        x = 1 / x
+        n = -n
+    hasil = 1
+    
+    for i in range(0, n):
+        hasil *= x
+    return(hasil)
     return 0
 
 if __name__ == '__main__':

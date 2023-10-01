@@ -1,4 +1,18 @@
 def muncul_sekali(angka):
+    count_dict = {}
+    for digit in angka:
+        if digit in count_dict:
+            count_dict[digit] += 1
+        else:
+            count_dict[digit] = 1
+    
+    unique_numbers = []
+    
+    for digit, count in count_dict.items():
+        if count == 1:
+            unique_numbers.append(int(digit))
+    
+    return unique_numbers
     return []
 
 if __name__ == '__main__':
